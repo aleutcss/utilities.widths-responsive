@@ -3,11 +3,19 @@
 \*------------------------------------*/
 
 /**
- * Responsive width classes based on your responsive settings.
+ * Widths-responsive loops through the breakpoints defined in settings.responsive to generate prefixed breakpoint-based classes. If you are
+ using inuitcss’ default breakpoints, you will be given classes like
+ `u-1/4@lap-and-up`, or `u-1-of-2@desk`, etc. Usage:
+
+ <div class="o-layout">
+ 	<div class="o-layout__item u-1/1 u-1/2@lap-and-up">Foo</div><!--
+ --><div class="o-layout__item u-1/1 u-1/2@lap-and-up">Bar</div>
+ </div>
+ 
  */
 
 // By default we will create wholes, halves, thirds, quarters, and fifths.
-// Predefine this Map to override.
+// Predefine this Map to override in your settings
 $inuit-widths-columns-responsive: (
     1,
     2,
@@ -19,17 +27,17 @@ $inuit-widths-columns-responsive: (
 // Loop over our breakpoints defined in _settings.responsive.scss
 @each $breakpoint in $breakpoints {
 
-  // Get the name of the breakpoint.
-  $alias: nth($breakpoint, 1);
+    // Get the name of the breakpoint.
+    $alias: nth($breakpoint, 1);
 
-  @include media-query($alias) {
+    @include media-query($alias) {
 
-    // Loop through each of our column sizes and generate its responsive width
-    // classes.
-    @each $inuit-widths-column in $inuit-widths-columns-responsive {
-      @include inuit-widths($inuit-widths-column, -#{$alias});
+        // Loop through each of our column sizes and generate its responsive width
+        // classes.
+        @each $inuit-widths-column in $inuit-widths-columns-responsive {
+            @include inuit-widths($inuit-widths-column, \@#{$alias});
+        }
+
     }
-
-  }
 
 }
