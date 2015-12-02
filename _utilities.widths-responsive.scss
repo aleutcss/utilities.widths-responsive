@@ -16,7 +16,7 @@
 
 // By default we will create wholes, halves, thirds, quarters, and fifths.
 // Predefine this Map to override in your settings
-$inuit-widths-columns-responsive: (
+$aleut-widths-columns-responsive: (
     1,
     2,
     3,
@@ -34,8 +34,8 @@ $inuit-widths-columns-responsive: (
 
         // Loop through each of our column sizes and generate its responsive width
         // classes.
-        @each $inuit-widths-column in $inuit-widths-columns-responsive {
-            @include inuit-widths($inuit-widths-column, \@#{$alias});
+        @each $aleut-widths-column in $aleut-widths-columns-responsive {
+            @include aleut-widths($aleut-widths-column, \@#{$alias});
         }
 
     }
