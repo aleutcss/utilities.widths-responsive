@@ -1,5 +1,5 @@
 {
-  "name": "aleut-responsive-widths",
+  "name": "@aleut/aleut-responsive-widths",
   "version": "0.3.0",
   "description": "Responsively controlled width classes for the aleutcss framework (based on Harry Roberts inuitcss framework)",
   "main": "_trumps.widths-responsive.scss",
