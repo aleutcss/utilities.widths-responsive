@@ -35,7 +35,7 @@ $widths-columns-responsive: (
         // Loop through each of our column sizes and generate its responsive width
         // classes.
         @each $widths-column in $widths-columns-responsive {
-            @include inuit-widths($widths-column, \@#{$alias});
+            @include widths($widths-column, \@#{$alias});
         }
 
     }
