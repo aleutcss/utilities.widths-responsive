@@ -3,13 +3,11 @@
 The aleutcss `widths-responsive` module is an extension of the default [`widths`
 module](https://github.com/aleutcss/trumps.widths).
 
-Install using Bower:
 
-    $ bower install --save inuit-widths-responsive
 
 Install using npm:
 
-    $ npm install --save inuit-widths-responsive
+    $ npm install --save-dev aleut-widths-responsive
 
 
 `widths-responsive` loops through the breakpoints defined in
