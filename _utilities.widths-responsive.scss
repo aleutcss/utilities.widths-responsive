@@ -5,7 +5,7 @@
 /**
  * Widths-responsive loops through the breakpoints defined in settings.responsive to generate prefixed breakpoint-based classes. If you are
  using inuitcss’ default breakpoints, you will be given classes like
- `u-1/4@lap-and-up`, or `u-1-of-2@desk`, etc. Usage:
+ `u-1/4@lap-and-up`, etc. Usage:
 
  <div class="o-layout">
  	<div class="o-layout__item u-1/1 u-1/2@lap-and-up">Foo</div><!--
