@@ -1,6 +1,5 @@
 {
-  "name": "aleut.utilities.responsive-widths"
-,
+  "name": "aleut.utilities.widths-responsive",
   "version": "1.0.1",
   "description": "Responsively controlled width classes for the aleutcss framework (based on Harry Roberts inuitcss framework)",
   "main": "_utilities.widths-responsive.scss",
@@ -30,6 +29,5 @@
     "aleut.settings.responsive": "~1.0.1",
     "aleut.tools.responsive": "~1.0.1",
     "aleut.tools.widths": "~1.0.1"
-
   }
 }
